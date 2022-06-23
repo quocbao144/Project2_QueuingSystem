@@ -1,0 +1,12 @@
+.customB {
+  color: #7E7D88;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor:default;
+}
+.customB > span:last-child {
+  color: #FF7506;
+}
+.BreadItem {
+  cursor: pointer;
+}

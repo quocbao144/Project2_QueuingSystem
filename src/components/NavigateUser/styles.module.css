@@ -1,0 +1,101 @@
+.flex {
+  display: flex;
+  position: relative;
+  align-items: center;
+  /* padding-right: 2rem; */
+}
+.flex > div:first-child > div:first-child{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF2E7;
+  border-radius: 50%;
+  color: #FF9138;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.click {
+  color: white !important;
+  background-color: #FF7506 !important;
+}
+.flex > div:last-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+.flex > div:last-child > div:last-child{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+.flex > div:last-child > div:last-child p {
+  margin: 0;
+}
+.flex > div:last-child > div:last-child p:first-child {
+  color: #7E7D88;
+  font-size: 0.75rem;
+}
+.flex > div:last-child > div:last-child p:last-child {
+  color: #535261;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.flex .reports {
+  display: none;
+  position: absolute;
+  top:calc(100% + 1rem);
+  width: 350px;
+  right: 0;
+}
+.reports > :last-child {
+  background-color: white;
+  height: 300px;
+  overflow: auto;
+  z-index: 1;
+}
+.reports > :last-child::-webkit-scrollbar  {
+  width: 5px;
+}
+.reports > :last-child::-webkit-scrollbar-thumb  {
+  background: #FFC89B;
+  border-radius: 50px;
+}
+.reports > div:first-child {
+  display: flex;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  color: white;
+  font-weight: 700;
+  background-color: #FF9138;
+  font-size: 1.25rem;
+  border-radius: 10px 10px 0 0;
+}
+.reports > :last-child {
+  border-radius: 0 0 10px 10px;
+  box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+}
+.item {
+  margin: 0 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1.5px solid #D4D4D7 !important;
+  height: 60px;
+  cursor: pointer;
+}
+.item h4 {
+  color: #BF5805;
+  font-weight: 700;
+}
+.itemHolder:hover {
+  background-color: #FFF2E7;
+}
+.togger {
+  display: block !important;
+}

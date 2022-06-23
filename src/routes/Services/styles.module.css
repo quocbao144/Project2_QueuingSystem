@@ -1,0 +1,133 @@
+.device {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.device > div:first-child {
+  color: var(--fontColor);
+  font-size: 1.5rem;
+  padding: 0.75rem 0;
+  font-weight: 700;
+}
+.device > div:nth-child(2) {
+  display: flex;
+}
+.device > div:nth-child(2) > [class=select]{
+  padding-right: 1rem;
+}
+.ServiceUsed {
+  position: relative;
+}
+.More {
+  position: absolute;
+  width: 140%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1;
+  white-space:normal !important;
+  border: 1px solid #FFC89B;
+  border-radius: 8px;
+  min-height: 100%;
+  overflow: visible !important;
+  padding: 0 16px;
+}
+.Add {
+  position: absolute;
+  right: 0;
+  width: 4.5rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--bgColorinvert);
+  padding: 0.5rem 0.25rem;
+  color: var(--bgColor);
+  box-shadow: 0px 0px 6px #E7E9F2;
+  cursor: pointer;
+}
+.Add > svg {
+  font-size: 1.5rem;
+  border-radius: 25px;
+}
+.Add > span {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+/* DeviceDetail */
+.detailContain {
+  padding: 0 1rem;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  flex-direction: column;
+  flex-grow: 1;
+}
+.detailContain > div:first-child{
+  color: var(--fontColor);
+  font-size: 1.25rem;
+  padding: 0.75rem 0;
+  font-weight: 700;
+}
+.detail {
+  display: flex;
+  flex-wrap: wrap;
+  color: #535261;
+}
+.detail > div {
+  width: 50%;
+  padding-bottom: 0.5rem;
+}
+.detail > div:last-child {
+  width: 100%;
+}
+.detail > div > span {
+  display: inline-block;
+  min-width: fit-content;
+  width: 9rem;
+  font-weight: 600;
+}
+.detail > div:last-child > span {
+  display: block;
+}
+/* DeviceUpdate */
+.updateContain {
+  padding: 0 1rem;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  flex-direction: column;
+  flex-grow: 1;
+}
+.updateContain > div:first-child{
+  color: var(--fontColor);
+  font-size: 1.25rem;
+  padding: 0.75rem 0;
+  font-weight: 700;
+}
+.updateContain > form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.updateContain > form > *{
+  width: 49%;
+  color: #282739 !important;
+  font-weight: 600;
+}
+.updateContain > form > *:last-child{
+  width: 100%;
+}
+.updateContain > form label::after{
+  content: "*";
+  color: red;
+}
+.device [class~=buttonHolder] {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+  justify-content: center;
+}
+.device [class~=buttonHolder] > button {
+  margin: 0 1rem;
+}

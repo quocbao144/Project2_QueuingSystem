@@ -1,0 +1,40 @@
+.userInfo {
+  padding: 4rem 0;
+  background-color: white;
+  margin-top: 2rem;
+}
+.userInfo > form {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.userInfo > form  > *{
+  padding: 0 1rem;
+}
+.imgField {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgField > img {
+  /* width: 15rem; */
+  min-width: 12rem;
+}
+.imgField > div {
+  margin-top: 1rem;
+  font-weight: 700;
+  color: #282739;
+  font-size: 1.5;
+}
+.infoField {
+  display: flex;
+  flex-wrap: wrap;
+}
+.infoField > * {
+  width: 50%;
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+.infoField input:disabled {
+  opacity: 0.5;
+}

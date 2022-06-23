@@ -1,0 +1,73 @@
+.menuNav {
+  display: flex;
+  padding: 0.25rem 2rem 0.25rem 0.5rem;
+  align-items: center;
+  white-space: nowrap;
+}
+.menuNav > span{
+  padding: 0 0.5rem 0 0.5rem;
+}
+.menuNav:not(.menuNavSelect) {
+  color: #7E7D88;
+}
+.menuNav:not(.menuNavSelect):hover {
+  color: var(--fontColor);
+  background-color: var(--bgColorinvert);
+}
+.menuNavSelect {
+  color: #FFF2E7;
+  background-color: var(--selectColor)
+}
+.menuNavSelect:hover {
+  color: #FFF2E7;
+}
+.subMenu {
+  position: relative;
+  color: #7E7D88;
+  white-space: nowrap;
+}
+.subMenu > div:first-child {
+  display: flex;
+  cursor: pointer;
+  padding: 0.25rem 1rem 0.25rem 0.5rem;
+  align-items: center;
+}
+.subMenu > div > :nth-child(2) {
+  padding: 0 0.5rem 0 0.5rem;
+}
+.subMenu:not(.subMenuActive):hover > div:first-child {
+  color: #FF7506;
+  background-color: #FFF2E7;
+}
+.subMenu > div:last-child {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 100%;
+  flex-direction: column;
+  display: none;
+  background-color: white;
+}
+.subMenu > div:last-child span{
+  white-space: nowrap;
+}
+.subMenu > div:last-child > *{
+  padding: 0.25rem 2rem;
+}
+.subMenu:hover > div:last-child {
+  display: flex;
+  animation: fade_in_show 0.5s linear 
+}
+.subMenuActive {
+  color: white;
+  background-color: #FF7506;
+}
+@keyframes fade_in_show {
+  0% {
+       opacity: 0;
+  }
+
+  100% {
+       opacity: 1;
+  }
+}

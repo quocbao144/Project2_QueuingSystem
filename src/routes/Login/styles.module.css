@@ -1,0 +1,107 @@
+.Layout {
+  display: flex;
+}
+.Layout > div:first-child {
+  width: 42%;
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* style img */
+.Layout > div:last-child {
+  width: 58%;
+  position: relative;
+  padding-top: 58%;
+}
+.Layout > div:last-child img {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10%;
+}
+/* style cho chu he thong quan ly xep hang */
+.Layout > div:last-child > div {
+  position: absolute;
+  top: 48%;
+  right: 0;
+  color: #FF7506;
+  padding-right: 3%;
+}
+.Layout > div:last-child > div > p {
+  font-size: 2.3vw;
+  margin: 0;
+}
+.Layout > div:last-child > div > h4 {
+  font-size: 2.3vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #FF7506;
+}
+/* Loginform start */
+.loginForm > * {
+  width: 90%;
+}
+/* Loginform layout */
+.loginForm > div:first-child {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 0;
+}
+.loginForm > div:last-child {
+  text-align: center;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loginForm > div > img {
+  max-height: 100%;
+  width: 40%;
+}
+/* Loginform layout done */
+/* form layout */
+.loginForm > form {
+  padding-top: 1rem;
+}
+.loginForm .errorMess {
+  color: #FF9138;
+  font-size: 0.9rem;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.loginForm .errorMess:hover {
+  color: #FF7506;
+}
+.loginForm .errorMess span {
+  margin-left: 0.3rem;
+}
+.loginForm > form > * {
+  font-size: 1.125rem;
+  color: #37474F;
+}
+
+/* 992px 768px 1200px 576px */
+@media screen and (min-width: 992px) {
+  .Layout > div:first-child {
+    height: 100vh;
+  }
+  /* style img */
+  .Layout > div:last-child {
+    padding-top: unset;
+    height: 100vh;
+  }
+  .Layout > div:last-child img {
+    height: 100%;
+  }
+  .loginForm > * {
+    width: 70%;
+  }
+}

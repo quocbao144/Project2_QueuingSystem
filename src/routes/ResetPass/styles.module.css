@@ -1,0 +1,89 @@
+.Layout {
+  display: flex;
+}
+.Layout > div:first-child {
+  width: 42%;
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* style img */
+.Layout > div:last-child {
+  width: 58%;
+  position: relative;
+  padding-top: 58%;
+}
+.Layout > div:last-child img {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10%;
+}
+/* emailform start */
+.emailForm > * {
+  width: 90%;
+}
+/* emailform layout */
+.emailForm > div:first-child {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 0;
+}
+.emailForm > div:last-child {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.emailForm > div > img {
+  max-height: 100%;
+  width: 40%;
+}
+/* emailform layout done */
+/* form layout */
+.emailForm > form {
+  padding-top: 1rem;
+}
+.emailForm > form > div {
+  display: flex;
+  flex-direction: column;
+}
+.emailForm > form > div:first-child {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.375rem;
+}
+.emailForm .errorMess {
+  color: #FF9138;
+  font-size: 0.9rem;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.emailForm .buttonGroup button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+/* 992px 768px 1200px 576px */
+@media screen and (min-width: 992px) {
+  .Layout > div:first-child {
+    height: 100vh;
+  }
+  /* style img */
+  .Layout > div:last-child {
+    padding-top: unset;
+    height: 100vh;
+  }
+  .Layout > div:last-child img {
+    height: 100%;
+  }
+  .emailForm > * {
+    width: 70%;
+  }
+}

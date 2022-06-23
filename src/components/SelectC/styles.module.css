@@ -1,0 +1,37 @@
+.label {
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+  display: block;
+}
+.selectC:not([class~=ant-select-disabled]):hover [class~=ant-select-selector] {
+  border: 1.5px solid #D4D4D7 !important;
+}
+.selectC[class~=ant-select-open]:not([class~=ant-select-disabled]):not([class~=ant-select-customized-input]) > div[class~=ant-select-selector] {
+  border: 1.5px solid #FFAC6A !important;
+
+}
+.selectC[class~=ant-select-focused]:not([class~=ant-select-disabled]):not([class~=ant-select-customized-input]) > [class~=ant-select-selector] {
+  border: 1.5px solid #D4D4D7 !important;
+  box-shadow: none !important;
+}
+.selectC > span[class~="ant-select-arrow"] {
+  color: var(--fontColor);
+}
+.selectC:not([class~=ant-select-customize-input]) > [class~=ant-select-selector] {
+  border: 1.5px solid #D4D4D7;
+  border-radius: 10px;
+  height: unset;
+  padding-top:5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.selectC:not([class~=ant-select-customize-input]) > [class~=ant-select-selector] > *{
+  line-height: inherit;
+}
+.selectC:not([class~=ant-select-customize-input]) > [class~=ant-select-selector]::after{
+  line-height: inherit;
+}
+.dropdown [class~=ant-select-item-option-selected]{
+  background-color: #FFF2E7;
+}

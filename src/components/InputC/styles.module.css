@@ -1,0 +1,32 @@
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+.inputGroup label {
+  padding-bottom: 0.2rem;
+}
+.inputGroup input{
+  width: 100%;
+  outline: none;
+  border:  1.5px solid #D4D4D7;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.inputGroup > div {
+  position: relative;
+}
+.inputGroup > div span {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%,-50%);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+label.labelReq::after {
+  content: "*";
+}  
+.inputGroup > div span:hover {
+  color: #FF7506;
+}
